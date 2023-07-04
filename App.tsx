@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 
 import { 
   NativeBaseProvider, 
@@ -22,6 +22,8 @@ import {
 } from "native-base";
 
 import Icon from 'react-native-vector-icons/Ionicons';
+import SplashScreen from "react-native-splash-screen";
+
 
 // header
 // function AppBar() {
@@ -53,6 +55,7 @@ function Banner() {
 
 // content
 function Content() {
+ 
   return <Center h="735px">
       <Box _dark={{bg: 'coolGray.800'}} _light={{bg: 'white' }} flex="1" safeAreaTop maxW="400px" w="100%">
       <Box bg="white">
@@ -157,6 +160,9 @@ function Footer() {
 // footer
 
 export default () => {
+  useEffect(()=>{
+    SplashScreen.hide();
+  },[])
   return (
     <NativeBaseProvider>
           <Content />
