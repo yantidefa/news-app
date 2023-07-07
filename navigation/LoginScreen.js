@@ -56,7 +56,6 @@ export default function LoginScreen({navigation}) {
               </Text>
             </Button>
           </Stack>
-          {/* <LinkButton to='HomeScreen'>Go to Jane's profile</LinkButton> */}
           <Stack mt="12" alignItems="center">
             <Button
               size="sm"
