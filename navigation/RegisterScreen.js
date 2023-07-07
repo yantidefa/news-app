@@ -26,7 +26,7 @@ var image = require('../android/app/src/main/res/mipmap-mdpi/pedia.png');
 
 export default function RegisterScreen({navigation}) {
   return (
-    <Box alignItems="center">
+    <Box alignItems="center" background={'white'} h='100%'>
       <HStack space={3} pt="24" pl="4" pb="24" size="md">
         <Image source={image} alt="Alternate Text" />
       </HStack>
@@ -60,12 +60,15 @@ export default function RegisterScreen({navigation}) {
             </Button>
           </Stack>
           <Stack mt="12" alignItems="center">
-            <Link
-              href="https://nativebase.io"
-              isExternal
-              _text={{color: '#C40B0B'}}>
-              Login here
-            </Link>
+          <Button
+              size="sm"
+              background={'white'}
+              fontSize={14}
+              onPress={() => navigation.navigate('Login')}>
+              <Text color={'#C40B0B'}>
+                Login here
+              </Text>
+            </Button>
           </Stack>
         </FormControl>
       </Box>

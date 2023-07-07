@@ -1,33 +1,19 @@
 import * as React from 'react';
 import {
-  NativeBaseProvider,
   Text,
   Box,
-  StatusBar,
   HStack,
-  IconButton,
-  AspectRatio,
   Stack,
-  Heading,
-  Center,
   Image,
-  Pressable,
-  Badge,
-  Spacer,
-  Flex,
   FormControl,
   Button,
   Input,
-  Link,
-  WarningOutlineIcon,
 } from 'native-base';
-import {createStackNavigator} from '@react-navigation/stack';
-// import LinkButton from './screens/HomeScreens';
 var image = require('../android/app/src/main/res/mipmap-mdpi/pedia.png');
 
 export default function LoginScreen({navigation}) {
   return (
-    <Box alignItems="center" background={'white'}>
+    <Box alignItems="center" background={'white'} h='100%'>
       <HStack space={3} pt="24" pl="4" pb="24" size="md">
         <Image source={image} alt="Alternate Text" />
       </HStack>
@@ -62,7 +48,7 @@ export default function LoginScreen({navigation}) {
               background={'white'}
               fontSize={14}
               onPress={() => navigation.navigate('Register')}>
-              <Text bold color={'#C40B0B'}>
+              <Text color={'#C40B0B'}>
                 Register here
               </Text>
             </Button>

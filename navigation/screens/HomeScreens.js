@@ -29,7 +29,6 @@ var image4 = require('../img/article-3.png');
 
 export default function HomeScreen({navigation}) {
   return (
-    <ScrollView>
       <Center h="735px" onPress={() => navigation.navigate('LoginScreen')}>
         <Box
           _dark={{bg: 'coolGray.800'}}
@@ -83,7 +82,8 @@ export default function HomeScreen({navigation}) {
               return (
                 <Pressable
                   style={{
-                    paddingLeft: 4,
+                    paddingLeft: 24,
+					paddingBottom: 12,
                     paddingRight: 5,
                     paddingVertical: 2,
                   }}
@@ -121,6 +121,5 @@ export default function HomeScreen({navigation}) {
           </ScrollView>
         </Box>
       </Center>
-    </ScrollView>
   );
 }

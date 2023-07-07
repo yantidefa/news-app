@@ -70,7 +70,7 @@ export default function ProfileScreen({navigation}) {
 					<Text color="#000000" fontSize="md">Johan</Text>
 				</VStack>
 
-                <Stack pl='8' pr='8' pt='48'>
+                <Stack pl='8' pr='8' pt='24'>
                     <Button size="sm" background={"#C40B0B"} variant="outline" fontSize={14}>
                     <Text bold color={"white"}>LOGOUT</Text>
                 </Button>

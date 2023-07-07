@@ -29,7 +29,7 @@ export default function DetailScreen({navigation, route}) {
   const {title, description, image} = route?.params;
   return (
     <View>
-      <Center h="735px">
+      <Center h="100%">
         <Box
           _dark={{bg: 'coolGray.800'}}
           _light={{bg: 'white'}}

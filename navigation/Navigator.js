@@ -8,7 +8,10 @@ const Stack = createStackNavigator();
 
 function Navigator() {
   return (
-    <Stack.Navigator>
+    <Stack.Navigator
+    screenOptions={({route}) => ({
+      headerShown: false,
+    })}>
       <Stack.Screen name="Login" component={LoginScreen} />
       <Stack.Screen name="Home" component={MainContainer} />
       <Stack.Screen name="Register" component={RegisterScreen} />
